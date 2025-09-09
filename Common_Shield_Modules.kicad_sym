@@ -227,7 +227,7 @@
 			)
 		)
 		(property "Value" "L298N_Mini_Motor_Driver"
-			(at 0.254 -13.208 0)
+			(at 2.794 -13.208 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -306,6 +306,38 @@
 				)
 				(fill
 					(type background)
+				)
+			)
+			(text "100\n16V\nVT"
+				(at -2.54 3.81 0)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
+				)
+			)
+			(text "100\n16V\nVT"
+				(at 2.54 3.81 0)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
+				)
+			)
+			(text "MOTOR A\n"
+				(at 2.54 -2.54 900)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
+				)
+			)
+			(text "MOTOR B"
+				(at 2.54 -7.62 900)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
 				)
 			)
 			(pin power_in line
@@ -419,7 +451,7 @@
 			(pin output line
 				(at 11.43 -1.27 180)
 				(length 2.54)
-				(name "M1+"
+				(name "OUT1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -437,7 +469,7 @@
 			(pin output line
 				(at 11.43 -3.81 180)
 				(length 2.54)
-				(name "M1-"
+				(name "OUT2"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -455,7 +487,7 @@
 			(pin output line
 				(at 11.43 -6.35 180)
 				(length 2.54)
-				(name "M2+"
+				(name "OUT3"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -473,7 +505,7 @@
 			(pin output line
 				(at 11.43 -8.89 180)
 				(length 2.54)
-				(name "M2-"
+				(name "OUT4"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -540,7 +572,7 @@
 		)
 		(symbol "LM393_Speed_Sensor_1_1"
 			(rectangle
-				(start -8.89 6.35)
+				(start -10.16 6.35)
 				(end 5.08 -6.35)
 				(stroke
 					(width 0)
@@ -548,6 +580,17 @@
 				)
 				(fill
 					(type background)
+				)
+			)
+			(rectangle
+				(start -5.08 1.27)
+				(end -1.27 -1.27)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type none)
 				)
 			)
 			(rectangle
@@ -586,7 +629,7 @@
 				)
 			)
 			(pin output line
-				(at -11.43 2.54 0)
+				(at -12.7 2.54 0)
 				(length 2.54)
 				(name "OUT"
 					(effects
@@ -604,7 +647,7 @@
 				)
 			)
 			(pin power_in line
-				(at -11.43 0 0)
+				(at -12.7 0 0)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -622,7 +665,7 @@
 				)
 			)
 			(pin power_in line
-				(at -11.43 -2.54 0)
+				(at -12.7 -2.54 0)
 				(length 2.54)
 				(name "VCC"
 					(effects
@@ -642,7 +685,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "SSD1306_I2C_Screen"
+	(symbol "SSD1306_I2C_128x32_Screen"
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -654,8 +697,8 @@
 				)
 			)
 		)
-		(property "Value" "SSD1306_I2C_Screen"
-			(at -6.604 -8.128 0)
+		(property "Value" "SSD1306_I2C_128x32_Screen"
+			(at -2.54 -8.128 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -689,7 +732,7 @@
 				(hide yes)
 			)
 		)
-		(symbol "SSD1306_I2C_Screen_1_1"
+		(symbol "SSD1306_I2C_128x32_Screen_1_1"
 			(rectangle
 				(start -16.51 5.08)
 				(end 12.7 -5.08)
@@ -734,7 +777,7 @@
 			(pin input line
 				(at -19.05 1.27 0)
 				(length 2.54)
-				(name "SCK"
+				(name "SCL"
 					(effects
 						(font
 							(size 1.27 1.27)
